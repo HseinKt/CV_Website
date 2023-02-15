@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 40px;
+}
+
+/*header*/
+.software{
+    color:  #5e94b7 ;
+}
+
+img{
+    width: 200px;
+    height: 240px;
+    border-radius: 40%;
+    border: 2px solid #5e94b7;
+    float: right;
+}
+.col{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+}
+
+.col ul{
+    float: right;
+    inset-inline: auto;
+}
+
+.col ul li {
+    list-style-type: none;
+}
+
+
+/*About*/
+.about{
+    float: left;
+    border: 2px black solid;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.about p{
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+/*hobbies*/
+.hobbies{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*experience*/
+.experience{
+    float: left;
+}
+
+table{
+    padding-bottom: 50px;
+}
+th, td{ 
+    border: 1px #dddddd solid;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+/*education*/
+.education{
+    float: left;
+}
