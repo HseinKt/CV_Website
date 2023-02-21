@@ -4,20 +4,71 @@
 
 body{
     margin: 40px;
+    background-color: rgb(0, 195, 255);
+    animation: changecolors1 2s infinite;
+}
+
+@keyframes changecolors1 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.name, h2{
+    color: black;
+    animation: changecolors3 1s infinite;
+}
+
+@keyframes changecolors3 {
+    from { color: black;}
+    to { color: whitesmoke;}
 }
 
 /*header*/
+.header {
+}
 .software{
     color:  #5e94b7 ;
 }
 
 img{
-    width: 200px;
-    height: 240px;
-    border-radius: 40%;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
     border: 2px solid #5e94b7;
     float: right;
+    animation: spinner 0.4s infinite;
 }
+
+@keyframes spinner {
+    0% { 
+        transform: rotate(0deg); 
+        width: 10%;
+        height: 10%;
+    }
+    10% { 
+        transform: rotate(112deg);
+        width: 20%;
+        height: 20%;
+    }
+    25% { 
+        transform: rotate(90deg);
+        width: 30%;
+        height: 30%;
+    }
+    50% { 
+        transform: rotate(180eg); 
+        width: 45%;
+        height: 45%;
+    }
+    100% { 
+        transform: rotate(360deg);
+        width: 50%;
+        height: 50%;
+    }
+}
+
 .col{
     float: left;
     width: 33.3%;
@@ -33,13 +84,21 @@ img{
     list-style-type: none;
 }
 
-
 /*About*/
 .about{
     float: left;
     border: 2px black solid;
-    margin-top: 20px;
+    margin-top: 100px;
     padding: 10px;
+    background-color: rgb(0, 195, 255);
+    animation: changecolors2 2s infinite;
+}
+
+@keyframes changecolors2 {
+    0%   {background-color: yellow;}
+    25%  {background-color: red;}
+    50%  {background-color: green}
+    100% {background-color: blue;}
 }
 
 .about p{
@@ -75,4 +134,10 @@ tr:nth-child(even){
 /*education*/
 .education{
     float: left;
+}
+
+audio {
+    width: 100px; 
+    height: 30px; 
+    margin-left: 20px; 
 }
